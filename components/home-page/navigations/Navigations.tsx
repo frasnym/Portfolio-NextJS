@@ -17,8 +17,8 @@ export default function Navigations() {
 			text: 'Education',
 		},
 		{
-			url: '/others',
-			text: 'Other Skill',
+			url: '/language',
+			text: 'Language Skill',
 		},
 	];
 	return (
