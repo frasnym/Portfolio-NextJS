@@ -15,15 +15,17 @@ export default function Home() {
 	];
 
 	return (
-		<Layout title="Portfolio of FrasNym">
+		<Layout title="Home">
 			<img
 				className="rounded-full max-w-xs max-h-xs mb-5"
 				src="/images/avatar.jpg"
 				alt="Photos of FrasNym"
 			/>
 			<article className="text-gray-300 text-left bg-gray-900 bg-opacity-90 p-5 rounded-3xl">
-				<h1 className="text-white text-6xl">Hi, I'm Fras</h1>
-				<hr className="my-4" />
+				<header>
+					<h1 className="text-white text-6xl">Hi, I'm Fras</h1>
+					<hr className="my-4" />
+				</header>
 				<p className="text-3xl mb-3">
 					A <strong>Full-Stack Developer</strong> from Indonesia{' '}
 					<img

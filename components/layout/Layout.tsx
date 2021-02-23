@@ -9,7 +9,7 @@ type Props = {
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
 	<main className="bg-main-bg bg-cover bg-no-repeat bg-fixed bg-center h-full min-h-screen">
 		<Head>
-			<title>{title} - FrasNym</title>
+			<title>{title} | FrasNym</title>
 			<meta
 				name="viewport"
 				content="initial-scale=1.0, width=device-width"
