@@ -47,24 +47,6 @@ export default function SocialLinks() {
 		},
 	];
 	return (
-		// 		box-sizing border-box
-		// color rgb(255, 255, 255)
-		// cursor pointer
-		// display inline
-		// font-family "Sulphur Point", sans-serif
-		// font-size 28px
-		// font-weight 300
-		// height 24px
-		// line-height 43.4px
-		// margin-right 25px
-		// text-decoration-color rgb(255, 255, 255)
-		// text-decoration-line underline
-		// text-decoration-style solid
-		// text-decoration-thickness auto
-		// text-size-adjust 100%
-		// width 24px
-		// -webkit-font-smoothing antialiased
-		// -webkit-tap-highlight-color rgba(0, 0, 0, 0)
 		<>
 			{anchorIcons.map((aIcon) => {
 				return (
