@@ -1,25 +1,14 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import { FaArrowLeft } from 'react-icons/fa';
 
 import Layout from '../components/layout/Layout';
+import NavBack from '../components/nav-back/NavBack';
 import Emoji from '../components/ui/emoji/Emoji';
 
 export default function about() {
-	const router = useRouter();
-
 	return (
 		<Layout title="About">
 			<article className="text-white bg-gray-900 bg-opacity-90 p-5 rounded-3xl">
-				<nav className="mb-6">
-					<span
-						className="text-xl font-bold cursor-pointer"
-						onClick={() => router.back()}
-					>
-						<FaArrowLeft className="inline-block mb-1 mr-3" /> Go
-						back
-					</span>
-				</nav>
+				<NavBack />
 				<header>
 					<h1 className="text-3xl font-bold">About Me - FrasNym</h1>
 					<hr className="my-3" />
