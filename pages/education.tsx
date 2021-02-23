@@ -35,7 +35,8 @@ export default function education() {
 										technology
 									</li>
 									<li className="list-disc">
-										Creating "job fair" website as thesis
+										Creating <strong>job fair</strong>{' '}
+										website as thesis
 									</li>
 									<li className="list-disc">
 										Stack: HTML, PHP, JavaScript, CSS, MySQL

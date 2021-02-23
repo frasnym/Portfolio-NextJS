@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Props = {
-	header: string;
+	header?: string;
 	subtitle?: string;
 	footer?: any;
 	children: any;

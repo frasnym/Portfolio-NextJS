@@ -13,6 +13,10 @@ export default function Navigations() {
 			text: 'Career',
 		},
 		{
+			url: '/portfolio',
+			text: 'Portfolio',
+		},
+		{
 			url: '/education',
 			text: 'Education',
 		},
