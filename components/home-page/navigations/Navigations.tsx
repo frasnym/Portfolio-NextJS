@@ -25,7 +25,7 @@ export default function Navigations() {
 		<nav className="mt-5">
 			{navs.map((nav) => {
 				return (
-					<Link href={nav.url}>
+					<Link key={nav.url} href={nav.url}>
 						<a className="mr-3 mt-3 inline-block font-normal text-center whitespace-nowrap align-middle border-solid border px-3 py-2 text-2xl rounded-lg border-gray-500 text-gray-100 transition-colors bg-gray-800 bg-opacity-30 hover:bg-gray-800">
 							{nav.text}
 						</a>
