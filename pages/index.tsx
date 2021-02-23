@@ -1,8 +1,19 @@
+import Typed from 'react-typed';
 import Navigations from '../components/home-page/navigations/Navigations';
 import SocialLinks from '../components/home-page/social-links/SocialLinks';
 import Layout from '../components/layout/Layout';
 
 export default function Home() {
+	const roles = [
+		'Developer',
+		'Tech. Content Writer',
+		'TypeScript',
+		'NodeJS',
+		'NextJS',
+		'MongoDB',
+		'PostgreSQL',
+	];
+
 	return (
 		<Layout title="Portfolio of FrasNym">
 			<img
@@ -25,6 +36,16 @@ export default function Home() {
 					Welcome to my portfolio website. Get informed, collaborate
 					and discover projects I was working on through the years!
 				</p>
+				<div>
+					<Typed
+						className="text-xl font-bold space-y-1"
+						strings={roles}
+						typeSpeed={60}
+						backSpeed={60}
+						backDelay={1000}
+						loop
+					/>
+				</div>
 				<section className="mt-8">
 					<SocialLinks />
 				</section>
