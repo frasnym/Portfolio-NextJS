@@ -14,6 +14,49 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 				name="viewport"
 				content="initial-scale=1.0, width=device-width"
 			/>
+			<meta
+				name="description"
+				content={`My name is Nyoman Frastyawan 👋. I'm from Indonesia. I've been working in programming for more than 3 years now 🎉. I work with JavaScipt everyday, Backend with NodeJS & Frontend with NextJS.`}
+			/>
+			<meta
+				name="keywords"
+				content="nyoman frastyawan, frasnym, frasnym portfolio, frasnym developer, frasnym freelance"
+			/>
+			{/* Open Graph */}
+			<meta
+				property="og:title"
+				content="Nyoman Frastyawan (FrasNym) - Programmer, Developer, Software Engineer"
+			/>
+			<meta property="og:locale" content="en_ID" />
+			<meta property="og:locale:alternate" content="en_ID" />
+			<meta property="og:type" content="website" />
+			<meta
+				property="og:description"
+				content={`My name is Nyoman Frastyawan 👋. I work with JavaScipt everyday, Backend with NodeJS & Frontend with NextJS.`}
+			/>
+			<meta property="og:url" content="https://frasnym.tech/" />
+			<meta
+				property="og:image"
+				content="https://frasnym.tech/images/avatar.jpg"
+			/>
+			{/* Twitter Open Graph */}
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:site" content="@frasnym" />
+			<meta name="twitter:creator" content="@frasnym" />
+			<meta property="og:url" content="https://frasnym.tech/" />
+			<meta
+				property="og:title"
+				content="Nyoman Frastyawan (FrasNym) - Programmer, Developer, Software Engineer"
+			/>
+			<meta
+				property="og:description"
+				content={`My name is Nyoman Frastyawan 👋. I work with JavaScipt everyday, Backend with NodeJS & Frontend with NextJS.`}
+			/>
+			<meta
+				property="og:image"
+				content="https://frasnym.tech/images/avatar.jpg"
+			/>
+
 			<link rel="shortcut icon" href="/favicon.ico" />
 		</Head>
 		<div className="w-full flex content-center items-center">
