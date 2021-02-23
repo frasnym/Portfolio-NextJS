@@ -11,7 +11,7 @@ export default function about() {
 				<NavBack />
 				<header>
 					<h1 className="text-3xl font-bold">About Me - FrasNym</h1>
-					<hr className="my-3" />
+					<hr className="my-5" />
 				</header>
 				<p className="text-xl mb-3">
 					My full name is Nyoman Frastyawan <Emoji symbol="👋" />. I'm
