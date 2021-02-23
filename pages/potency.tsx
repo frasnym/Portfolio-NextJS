@@ -55,8 +55,11 @@ export default function potency() {
 					</header>
 					<div className="flex flex-wrap">
 						{potency.map((pot) => (
-							<div className="p-2 sm:w-full md:w-1/2 lg:w-1/3">
-								<Card key={pot.title} header={pot.title}>
+							<div
+								key={pot.title}
+								className="p-2 sm:w-full md:w-1/2 lg:w-1/3"
+							>
+								<Card header={pot.title}>
 									<ul className="text-xl mb-3 pl-8">
 										{pot.items.map((item) => (
 											<li
