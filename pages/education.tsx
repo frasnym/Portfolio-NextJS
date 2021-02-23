@@ -22,10 +22,25 @@ export default function education() {
 								header="Institute Of Business And Informatics Stikom Surabaya"
 								subtitle="Years Period: 2011 - 2016"
 							>
-								<p>
+								<p className="text-xl mb-3">
 									Bachelor degree Information Systems
 									Department with GPA <strong>3.57</strong>
 								</p>
+								<ul className="text-xl mb-3 pl-8">
+									<li className="list-disc">
+										Studied about software programming
+									</li>
+									<li className="list-disc">
+										Developing interest on world of
+										technology
+									</li>
+									<li className="list-disc">
+										Creating "job fair" website as thesis
+									</li>
+									<li className="list-disc">
+										Stack: HTML, PHP, JavaScript, CSS, MySQL
+									</li>
+								</ul>
 							</Card>
 						</div>
 					</div>
