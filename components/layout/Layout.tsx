@@ -1,10 +1,35 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
+import { GA_TRACKING_ID } from '../../libs/gtag';
 
 type Props = {
 	children?: ReactNode;
 	title?: string;
 };
+
+let gtag: ReactNode;
+if (process.env.NODE_ENV === 'production') {
+	gtag = (
+		<>
+			<script
+				async
+				src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+			/>
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', '${GA_TRACKING_ID}', {
+						page_path: window.location.pathname,
+					});
+			`,
+				}}
+			/>
+		</>
+	);
+}
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
 	<main className="bg-main-bg bg-cover bg-no-repeat bg-fixed bg-center h-full min-h-screen">
@@ -58,6 +83,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 			/>
 
 			<link rel="shortcut icon" href="/favicon.ico" />
+
+			{/* Global Site Tag (gtag.js) - Google Analytics */}
+			{gtag}
 		</Head>
 		<div className="w-full flex content-center items-center">
 			<div className="m-auto shadow-lg sm:rounded-3xl p-3 mb-5 sm:py-20 sm:px-10 lg:w-4/5">

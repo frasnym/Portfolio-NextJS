@@ -108,7 +108,7 @@ export default function portfolio() {
 									<ul>
 										{porto.details.map((item) => (
 											<li key={item.value}>
-												<strong>Stack:</strong>{' '}
+												<strong>{item.title}:</strong>{' '}
 												{item.url ? (
 													<a
 														className="text-purple-600 underline"
