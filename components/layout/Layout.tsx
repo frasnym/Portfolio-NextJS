@@ -34,6 +34,8 @@ if (process.env.NODE_ENV === 'production') {
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
 	<main className="bg-main-bg bg-cover bg-no-repeat bg-fixed bg-center h-full min-h-screen">
 		<Head>
+			{/* Global Site Tag (gtag.js) - Google Analytics */}
+			{gtag}
 			<title>{title} | FrasNym</title>
 			<meta
 				name="viewport"
@@ -83,9 +85,6 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 			/>
 
 			<link rel="shortcut icon" href="/favicon.ico" />
-
-			{/* Global Site Tag (gtag.js) - Google Analytics */}
-			{gtag}
 		</Head>
 		<div className="w-full flex content-center items-center">
 			<div className="m-auto shadow-lg sm:rounded-3xl p-3 mb-5 sm:py-20 sm:px-10 lg:w-4/5">
